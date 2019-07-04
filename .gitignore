@@ -29,3 +29,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Spring db ###
+bookings.db.mv.db
+bookings.
