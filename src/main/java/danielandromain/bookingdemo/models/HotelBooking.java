@@ -1,26 +1,44 @@
 package danielandromain.bookingdemo.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  * <h1>Hotel Booking.</h1>
- * <p>Has a name, price per night and a number of nights</p>
+ * <p>Has a hotelName, price per night and a number of nights</p>
  */
+@Entity
 public class HotelBooking {
-    private String name;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private long id;
+
+    private String hotelName;
     private double pricePerNight;
     private int nbOfNights;
 
-    public HotelBooking(String name, double pricePerNight, int nbOfNights) {
-        this.name = name;
+    public HotelBooking(String hotelName, double pricePerNight, int nbOfNights) {
+        this.hotelName = hotelName;
         this.pricePerNight = pricePerNight;
         this.nbOfNights = nbOfNights;
     }
 
-    public String getName() {
-        return name;
+    public long getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getHotelName() {
+        return hotelName;
+    }
+
+    public void setHotelName(String hotelName) {
+        this.hotelName = hotelName;
     }
 
     public double getPricePerNight() {

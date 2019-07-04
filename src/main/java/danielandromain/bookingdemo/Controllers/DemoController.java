@@ -1,4 +1,4 @@
-package danielandromain.bookingdemo;
+package danielandromain.bookingdemo.Controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

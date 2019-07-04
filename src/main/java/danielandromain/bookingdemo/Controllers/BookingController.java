@@ -33,4 +33,11 @@ public class BookingController {
         return bookings.stream().filter(x -> x.getPricePerNight() <= price)
                 .collect(Collectors.toList());
     }
+
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    public List<HotelBooking> create(@RequestBody HotelBooking hotelBooking){
+        bookings.add(hotelBooking);
+
+        return bookings;
+    }
 }

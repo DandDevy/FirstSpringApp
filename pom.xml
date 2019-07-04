@@ -11,7 +11,7 @@
     <groupId>danielandromain</groupId>
     <artifactId>bookingdemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>bookingdemo</name>
+    <hotelName>bookingdemo</hotelName>
     <description>Demo youtube romaincoder project for Spring Boot</description>
 
     <properties>
