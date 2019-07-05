@@ -55,6 +55,7 @@
         <!-- Spring Boot 101 thymeleaf  -->
     <p th:text="'Welcome here '  + ${username}">Signed as A</p>
     <p th:text="${datatime}" ></p>
+    <p th:text="${#dates.format(datatime, 'dd/MM/yyyy HH:mm')}" ></p>
 
     <div class="container">
 
